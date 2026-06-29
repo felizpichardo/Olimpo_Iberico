@@ -1,0 +1,74 @@
+<div class="login-page">
+
+  <div class="login-card">
+
+    <div class="logo">
+
+      <h1>OLIMPO IBÉRICO</h1>
+
+      <div class="gold-line"></div>
+
+      <p>Sistema de Gestión del Restaurante</p>
+
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="login()">
+
+      <div class="input-group">
+
+        <span class="icon">
+          <i class="bi bi-person-fill"></i>
+        </span>
+
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Usuario">
+
+      </div>
+
+      <div class="input-group">
+
+        <span class="icon">
+          <i class="bi bi-lock-fill"></i>
+        </span>
+
+        <input
+          [type]="showPassword ? 'text' : 'password'"
+          formControlName="password"
+          placeholder="Contraseña">
+
+        <span
+          class="eye"
+          (click)="togglePassword()">
+
+          <i
+            class="bi"
+            [ngClass]="showPassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'">
+          </i>
+
+        </span>
+
+      </div>
+
+      <div
+        class="error"
+        *ngIf="errorMessage">
+
+        {{ errorMessage }}
+
+      </div>
+
+      <button
+        class="login-btn"
+        type="submit">
+
+        Iniciar Sesión
+
+      </button>
+
+    </form>
+
+  </div>
+
+</div>

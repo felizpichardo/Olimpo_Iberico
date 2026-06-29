@@ -1,0 +1,358 @@
+.login-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    font-family:'Playfair Display', serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #17110c 0%,
+        #241914 45%,
+        #2d2019 100%
+    );
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.login-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(255,210,90,.12),
+        transparent 70%
+    );
+
+    animation:glow 7s ease-in-out infinite alternate;
+
+}
+
+
+
+.login-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    max-width:520px;
+
+    padding:60px 50px;
+
+    border-radius:22px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(46,33,26,.96),
+        rgba(28,20,16,.98)
+    );
+
+    border:1px solid rgba(249,213,110,.22);
+
+    box-shadow:
+    0 20px 55px rgba(0,0,0,.55);
+
+}
+
+
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.logo h1{
+
+    margin:0;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #fff7d8,
+        #f9dc82,
+        #bf8920,
+        #fff5c7,
+        #c98d1f,
+        #fff8df
+    );
+
+    background-size:250%;
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:
+    goldMove 7s linear infinite,
+    floatTitle 5s ease-in-out infinite;
+
+}
+
+.gold-line{
+
+    width:170px;
+
+    height:3px;
+
+    margin:22px auto;
+
+    border-radius:10px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        #f9d56e,
+        transparent
+    );
+
+}
+
+.logo p{
+
+    margin-top:15px;
+
+    font-size:17px;
+
+    color:#eadfcf;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.input-group{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    padding:18px 20px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(249,213,110,.18);
+
+    transition:.35s;
+
+}
+
+.input-group:focus-within{
+
+    border-color:#f9d56e;
+
+    box-shadow:
+    0 0 20px rgba(255,210,90,.25);
+
+}
+
+.input-group input{
+
+    flex:1;
+
+    margin-left:15px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.input-group input::placeholder{
+
+    color:#bfb8af;
+
+}
+
+.icon,
+.eye{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #fff7d8,
+        #f9dc82,
+        #bf8920,
+        #fff5c7
+    );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.eye{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.eye:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+.error{
+
+    text-align:center;
+
+    color:#ff9f9f;
+
+    margin-bottom:20px;
+
+    font-size:15px;
+
+}
+
+
+
+.login-btn{
+
+    width:100%;
+
+    margin-top:8px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-family:'Playfair Display', serif;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    color:#2a1b10;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff7d3,
+        #efc55a,
+        #bf8620,
+        #ffe8a3
+    );
+
+    background-size:250%;
+
+    transition:.4s;
+
+    box-shadow:
+    0 0 25px rgba(255,210,90,.20);
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-4px);
+
+    background-position:right;
+
+    box-shadow:
+    0 0 35px rgba(255,210,90,.40);
+
+}
+
+.login-btn:active{
+
+    transform:translateY(2px);
+
+}
+
+
+
+@media(max-width:768px){
+
+    .login-page{
+
+        padding:20px;
+
+    }
+
+    .login-card{
+
+        padding:40px 28px;
+
+    }
+
+    .logo h1{
+
+        font-size:34px;
+
+        letter-spacing:2px;
+
+    }
+
+    .logo p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+

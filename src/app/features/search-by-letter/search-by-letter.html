@@ -1,0 +1,86 @@
+<app-navbar></app-navbar>
+
+<div class="letter-container">
+
+  <h1>Explorar por Letra</h1>
+
+  <p class="subtitle">
+    Selecciona una letra para descubrir los platos disponibles.
+  </p>
+
+  <div class="letters">
+
+    @for (letter of letters; track letter) {
+
+      <button
+        type="button"
+        (click)="selectLetter(letter)"
+        [class.active]="selectedLetter === letter">
+
+        {{ letter }}
+
+      </button>
+
+    }
+
+  </div>
+
+  @if (loading) {
+
+    <p class="loading">
+      Cargando experiencia gastronómica...
+    </p>
+
+  }
+
+  <div class="debug">
+
+    <h2>Letra: {{ selectedLetter }}</h2>
+
+    <h2>Total: {{ meals.length }}</h2>
+
+  </div>
+
+  <div class="results">
+
+    @for (meal of meals; track meal.idMeal) {
+
+      <div class="card">
+
+        <img
+          [src]="meal.strMealThumb"
+          [alt]="meal.strMeal">
+
+        <div class="card-body">
+
+          <h3>{{ meal.strMeal }}</h3>
+
+          <p>
+            <strong>Categoría:</strong>
+            {{ meal.strCategory }}
+          </p>
+
+          <p>
+            <strong>Origen:</strong>
+            {{ meal.strArea || 'No disponible' }}
+          </p>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+  @if (!loading && selectedLetter && meals.length === 0) {
+
+    <div class="no-results">
+
+      <h2>No se encontraron platos.</h2>
+
+    </div>
+
+  }
+
+</div>

@@ -1,0 +1,41 @@
+<div class="random-container">
+
+  <h1>Descubrir una Experiencia</h1>
+
+  <button type="button" (click)="getRandomMeal()">
+    Generar Plato Aleatorio
+  </button>
+
+  <p *ngIf="loading">
+    Creando experiencia gastronómica...
+  </p>
+
+  <div class="meal-card" *ngIf="meal">
+
+    <img
+      [src]="meal.strMealThumb"
+      [alt]="meal.strMeal">
+
+    <div class="info">
+
+      <h2>{{ meal.strMeal }}</h2>
+
+      <p>
+        <strong>Categoría:</strong>
+        {{ meal.strCategory }}
+      </p>
+
+      <p>
+        <strong>Origen:</strong>
+        {{ meal.strArea }}
+      </p>
+
+      <p class="desc">
+        {{ meal.strInstructions | slice:0:150 }}...
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

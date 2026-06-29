@@ -1,0 +1,43 @@
+<div class="search-container">
+
+  <h1>Buscar Experiencia Gastronómica</h1>
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Ej: pizza, chicken, pasta..."
+    >
+
+    <button (click)="search()" class="search-btn">
+
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+      </svg>
+
+    </button>
+
+  </div>
+
+  <div class="results">
+
+    <div class="card" *ngFor="let meal of meals">
+
+      <img [src]="meal.strMealThumb" />
+
+      <h3>{{ meal.strMeal }}</h3>
+
+      <p><strong>Categoría:</strong> {{ meal.strCategory }}</p>
+      <p><strong>Origen:</strong> {{ meal.strArea }}</p>
+
+      <p class="desc">
+        {{ meal.strInstructions | slice:0:100 }}...
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
