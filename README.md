@@ -3,14 +3,11 @@
 Aplicación web desarrollada con **Angular 21** que permite consultar información gastronómica utilizando la API pública **TheMealDB**.
 El proyecto implementa autenticación simulada, protección de rutas mediante Guards y consumo de una API REST utilizando **HttpClient** y **RxJS**.
 
-<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/24e1de8f-89ef-4be8-a7ae-098ac8b294ec" />
+<img width="1437" height="827" alt="image" src="https://github.com/user-attachments/assets/0aee57a9-65bd-4ab0-b8dd-c9dc0ebb4136" />
 
-<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/f5cfb406-d0a1-4300-8a45-4bfc28dd6d5d" />
+<img width="1525" height="875" alt="image" src="https://github.com/user-attachments/assets/39eb79d5-e707-4874-b2c3-1e00491a3ed9" />
 
-<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/3369cb89-b506-4255-a1a8-92c33fe2f7d0" />
-
-<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/db580551-b125-4521-8097-9103b7307e0a" />
-
+<img width="1529" height="860" alt="image" src="https://github.com/user-attachments/assets/909170f7-70a2-4ff5-80d6-39337348921a" />
 
 #  Objetivos
 
