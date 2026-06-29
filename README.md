@@ -1,59 +1,158 @@
-# OlimpOIberico
+#  Olimpo Ibérico
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+Aplicación web desarrollada con **Angular 21** que permite consultar información gastronómica utilizando la API pública **TheMealDB**.
+El proyecto implementa autenticación simulada, protección de rutas mediante Guards y consumo de una API REST utilizando **HttpClient** y **RxJS**.
 
-## Development server
+<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/24e1de8f-89ef-4be8-a7ae-098ac8b294ec" />
+<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/3aabf519-050c-4339-9fc7-a396901d6106" />
+<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/2a821bfb-f3ba-488c-9ece-5ed643fcc4d8" />
+<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/2ce212e4-5581-4fa5-ae22-33e43194821f" />
+<img width="1517" height="767" alt="Captura de pantalla 2026-06-29 153140" src="https://github.com/user-attachments/assets/a3be2062-7af9-444b-81bf-2ce84e85632b" />
 
-To start a local development server, run:
 
-```bash
-ng serve
+
+#  Objetivos
+
+* Desarrollar una aplicación SPA utilizando Angular.
+* Implementar autenticación mediante LocalStorage.
+* Consumir una API REST utilizando HttpClient.
+* Aplicar formularios reactivos con validaciones.
+* Proteger rutas mediante Guards.
+* Organizar el proyecto siguiendo una arquitectura escalable.
+
+
+
+#  Funcionalidades
+
+* 🔐 Inicio de sesión.
+* 🏠 Página principal (Home).
+* 🔎 Búsqueda de platos por nombre.
+* 🔤 Búsqueda de platos por letra inicial.
+* 🎲 Obtención de un plato aleatorio.
+* 🚫 Protección de rutas para usuarios autenticados.
+* 🔓 Cierre de sesión.
+
+
+
+#  Tecnologías utilizadas
+
+* Angular 21
+* TypeScript
+* HTML5
+* CSS3
+* RxJS
+* HttpClient
+* Angular Router
+* Reactive Forms
+* LocalStorage
+* TheMealDB API
+
+
+
+# Estructura del proyecto
+
+```text
+src/
+│
+├── app/
+│
+├── core/
+│   ├── guards/
+│   ├── models/
+│   └── services/
+│
+├── features/
+│   ├── auth/
+│   ├── home/
+│   ├── search-name/
+│   ├── search-letter/
+│   ├── random-meal/
+│   └── not-found/
+│
+├── app.config.ts
+├── app.routes.ts
+└── main.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+#  Autenticación
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+El proyecto implementa una autenticación simulada utilizando **LocalStorage**.
 
-```bash
-ng generate component component-name
+Después de iniciar sesión se almacena el estado del usuario y se protege el acceso mediante:
+
+* AuthGuard
+* LoginGuard
+
+---
+
+# 🌐 API utilizada
+
+TheMealDB
+
+Endpoints utilizados:
+
+### Buscar por nombre
+
+```http
+GET /search.php?s=nombre
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Buscar por letra
 
-```bash
-ng generate --help
+```http
+GET /search.php?f=a
 ```
 
-## Building
+### Plato aleatorio
 
-To build the project run:
-
-```bash
-ng build
+```http
+GET /random.php
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+#  Arquitectura
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+El proyecto está organizado en tres capas principales:
 
-```bash
-ng test
-```
+### Core
 
-## Running end-to-end tests
+Contiene servicios, modelos y Guards reutilizables.
 
-For end-to-end (e2e) testing, run:
+### Features
 
-```bash
-ng e2e
-```
+Contiene todos los componentes de la aplicación.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Models
 
-## Additional Resources
+Define las interfaces utilizadas para representar los datos recibidos desde la API.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Conceptos aplicados
+
+* Componentes Standalone
+* Routing
+* Guards
+* Servicios
+* Dependency Injection
+* Reactive Forms
+* HttpClient
+* Observables
+* RxJS
+* Consumo de APIs REST
+* LocalStorage
+
+
+#  Aprendizajes obtenidos
+
+Durante el desarrollo del proyecto se fortalecieron conocimientos relacionados con Angular, el consumo de APIs REST, la creación de formularios reactivos, la implementación de autenticación simulada, la protección de rutas mediante Guards y la organización de aplicaciones siguiendo una arquitectura basada en componentes y servicios.
+
+
+#  Autor
+
+**Emely Mariel Feliz**
+
+Proyecto académico desarrollado para la asignatura de Desarrollo Web con Angular.
