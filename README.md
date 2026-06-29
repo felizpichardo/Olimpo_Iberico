@@ -4,11 +4,12 @@ Aplicación web desarrollada con **Angular 21** que permite consultar informaci�
 El proyecto implementa autenticación simulada, protección de rutas mediante Guards y consumo de una API REST utilizando **HttpClient** y **RxJS**.
 
 <img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/24e1de8f-89ef-4be8-a7ae-098ac8b294ec" />
-<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/3aabf519-050c-4339-9fc7-a396901d6106" />
-<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/2a821bfb-f3ba-488c-9ece-5ed643fcc4d8" />
-<img width="1437" height="827" alt="WhatsApp Image 2026-06-29 at 3 22 04 PM" src="https://github.com/user-attachments/assets/2ce212e4-5581-4fa5-ae22-33e43194821f" />
-<img width="1517" height="767" alt="Captura de pantalla 2026-06-29 153140" src="https://github.com/user-attachments/assets/a3be2062-7af9-444b-81bf-2ce84e85632b" />
 
+<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/f5cfb406-d0a1-4300-8a45-4bfc28dd6d5d" />
+
+<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/3369cb89-b506-4255-a1a8-92c33fe2f7d0" />
+
+<img width="1513" height="764" alt="Captura de pantalla 2026-06-29 153355" src="https://github.com/user-attachments/assets/db580551-b125-4521-8097-9103b7307e0a" />
 
 
 #  Objetivos
